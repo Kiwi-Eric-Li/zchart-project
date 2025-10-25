@@ -1,13 +1,15 @@
 // @ts-ignore
-import {Decoration5} from '@jiaminghi/data-view-react'
+import {Decoration5, Decoration8} from '@jiaminghi/data-view-react'
 
-
+import './index.css'
 
 function Head() {
     return (
         <div className="header">
-            <div>Large-screen Project</div>
+            <Decoration8 style={{width: '300px', 'height': '70px'}}/>
+            <div className='head-title'>Large-screen Project</div>
             <Decoration5 style={{width: '300px', height: '90px'}}/>
+            <Decoration8 reverse={true} style={{width: '300px', 'height': '70px'}}/>
         </div>
     )
 }
