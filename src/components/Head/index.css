@@ -6,6 +6,14 @@
     align-items: center;
 }
 .head-title{
-    width: 500px;
     position: relative;
+}
+.head-title span{
+    position: absolute;
+    color: aliceblue;
+    font-size: 34px;
+    font-weight: 400;
+    left: 135px;
+    top: 5px;
+    width: 100%;
 }
