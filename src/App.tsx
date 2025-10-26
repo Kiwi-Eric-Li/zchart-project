@@ -2,6 +2,9 @@ import {useState, useEffect} from 'react'
 
 import './App.css'
 import Head from './components/Head'
+import Box1 from './components/Box1/index.js'
+import Box2 from './components/Box2/index.js'
+import Box3 from './components/Box3/index.js'
 import scale from './utils/index.js'
 
 function App() {
@@ -31,6 +34,11 @@ function App() {
     <>
       <div className='app' style={{'transform': `scale(${state.scale}) translate(-50%, -50%)`}}>
         <Head />
+        <div className='line1'>
+          <Box1 />
+          <Box2 />
+          <Box3 />
+        </div>
       </div>
     </>
   )

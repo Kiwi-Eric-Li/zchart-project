@@ -13,3 +13,8 @@
   left: 50%;
   top: 50%;
 }
+.line1, .line2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
