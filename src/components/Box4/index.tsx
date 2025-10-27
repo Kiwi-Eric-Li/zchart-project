@@ -24,7 +24,7 @@ export default function Box4(){
     return (
         <div className="box4">
             <BorderBox1>
-                <ScrollBoard config={state} style={{'width': 'calc(100% - 20px)', 'height': '300px', 'margin': 'auto', 'margin-top': '20px', 'position': 'absolute', 'left': '10px', 'top': '5px'}}></ScrollBoard>
+                <ScrollBoard config={state} style={{'width': 'calc(100% - 20px)', 'height': '300px', 'margin': 'auto', 'marginTop': '20px', 'position': 'absolute', 'left': '10px', 'top': '5px'}}></ScrollBoard>
             </BorderBox1>
         </div>
     )
