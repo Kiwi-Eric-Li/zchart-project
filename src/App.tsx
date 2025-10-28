@@ -7,7 +7,7 @@ import Box2 from './components/Box2/index.js'
 import Box3 from './components/Box3/index.js'
 import Box4 from './components/Box4/index.js'
 import Box5 from './components/Box5/index.js'
-import scale from './utils/index.js'
+import scale from './utils/index.ts'
 
 function App() {
   

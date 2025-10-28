@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 export default function Box4(){
 
-    const [state, setState] = useState({
+    const [state] = useState({
         header: ['列1', '列2', '列3'],
         data: [
             ['行1列1', '行1列2', '行1列3'],

@@ -1,4 +1,4 @@
-function scale(){
+export default function scale(){
     const designWidth = 1920;
     const designHeight = 1080;
 
@@ -7,5 +7,3 @@ function scale(){
 
     return Math.min(scaleX, scaleY);
 }
-
-export default scale;

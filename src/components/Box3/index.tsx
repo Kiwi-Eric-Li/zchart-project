@@ -3,6 +3,7 @@ import {useRef, useEffect} from 'react'
 import { BorderBox1 } from '@jiaminghi/data-view-react';
 
 import EchartsUtil from '../../hooks/EchartsUtil';
+import type {ECOption} from '../../hooks/EchartsUtil';
 import './index.css'
 
 function Box3() {
@@ -12,7 +13,7 @@ function Box3() {
 
         if(chartRef.current){
 
-            const options = {
+            const options: ECOption = {
                 title: {
                     text: 'Basic Radar Chart',
                     textStyle: {

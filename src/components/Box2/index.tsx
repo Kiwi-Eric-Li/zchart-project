@@ -3,6 +3,7 @@ import {useRef, useEffect} from 'react'
 import { BorderBox1 } from '@jiaminghi/data-view-react';
 
 import EchartsUtil from '../../hooks/EchartsUtil';
+import type {ECOption} from '../../hooks/EchartsUtil';
 import './index.css'
 
 function Box2() {
@@ -12,7 +13,7 @@ function Box2() {
     useEffect(() => {
 
         if(chartRef.current){
-            const options = {
+            const options: ECOption = {
                 tooltip: {
                     trigger: 'axis',
                     axisPointer: {

@@ -3,6 +3,7 @@ import { useRef, useEffect } from 'react';
 import { BorderBox1 } from '@jiaminghi/data-view-react';
 
 import EchartsUtil from '../../hooks/EchartsUtil';
+import type {ECOption} from '../../hooks/EchartsUtil';
 import './index.css'
 
 export default function Box5(){
@@ -10,7 +11,7 @@ export default function Box5(){
 
     useEffect(() => {
         if(chartRef.current){
-            const options = {
+            const options: ECOption = {
                 title: {
                     text: 'Stacked Area Chart',
                     textStyle: {
