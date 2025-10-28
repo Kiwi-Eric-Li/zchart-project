@@ -1,8 +1,8 @@
 import {useRef, useEffect} from 'react'
 // @ts-ignore
 import { BorderBox1 } from '@jiaminghi/data-view-react';
-import * as echarts from 'echarts';
 
+import EchartsUtil from '../../hooks/EchartsUtil';
 import './index.css'
 
 function Box3() {
@@ -11,8 +11,6 @@ function Box3() {
     useEffect(() => {
 
         if(chartRef.current){
-
-            const chart = echarts.init(chartRef.current);
 
             const options = {
                 title: {
@@ -56,7 +54,7 @@ function Box3() {
                 ],
             };
 
-            chart.setOption(options);
+            const chart = EchartsUtil(chartRef, options);
 
             return () => {
                 chart.dispose();
