@@ -1,21 +1,19 @@
 import {useRef, useEffect} from 'react'
 // @ts-ignore
 import { BorderBox1 } from '@jiaminghi/data-view-react';
-import * as echarts from 'echarts';
 
+import EchartsUtil from '../../hooks/EchartsUtil';
 import './index.css'
 
 function Box1() {
 
-    const chatRef = useRef<HTMLDivElement | null>(null);
+    const chartRef = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {
 
-        if(chatRef.current){
+        if(chartRef.current){
 
-            const chart = echarts.init(chatRef.current);
-
-            const option = {
+            const options = {
                 tooltip: {
                     trigger: 'item'
                 },
@@ -62,7 +60,7 @@ function Box1() {
                 ]
             };
 
-            chart.setOption(option);
+            const chart = EchartsUtil(chartRef, options);
 
             return () => {
                 chart.dispose();
@@ -74,7 +72,7 @@ function Box1() {
     return (
         <div className='box1'>
             <BorderBox1>
-                <div ref={chatRef} style={{'width': '100%', 'height': '100%'}}></div>
+                <div ref={chartRef} style={{'width': '100%', 'height': '100%'}}></div>
             </BorderBox1>
         </div>
     )
