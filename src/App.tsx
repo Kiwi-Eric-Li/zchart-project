@@ -20,7 +20,7 @@ function App() {
     window.addEventListener('resize', () => {
       setState({
         scale: scale()
-      })
+      });
     })
 
     return () => {
